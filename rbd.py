@@ -1,12 +1,18 @@
+global id
+id = 1
 class RBD():
 
-    def __init__(self, alternative, availability, cost):
-        self.alternative = alternative
-        self.availability = availability
-        self.cost = cost
-        self.unavailability = (1 - availability)
+    def __init__(self):
+        self.id = id
+        self.alternative = None
+        self.equipments = []
+        self.availability = None
+        self.cost = None
         self.norm_unav = None
         self.norm_cost = None
         self.distance = None
-        self.unav_month = (self.unavailability * (30*24))
-        self.unav_year = self.unav_month * 12
+        self.unavailability = None
+        self.unav_month = None
+        self.unav_year = None
+        id += 1
+        
