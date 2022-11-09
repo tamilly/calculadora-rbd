@@ -1,9 +1,6 @@
-global id
-id = 1
 class RBD():
 
     def __init__(self):
-        self.id = id
         self.alternative = None
         self.equipments = []
         self.availability = None
@@ -14,5 +11,4 @@ class RBD():
         self.unavailability = None
         self.unav_month = None
         self.unav_year = None
-        id += 1
         
